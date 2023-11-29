@@ -4,7 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### Password Info ###
+### Contains Secure Info - You'll have to add this yourself ###
 **/application.properties
 
 ### STS ###
