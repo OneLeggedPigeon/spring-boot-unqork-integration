@@ -62,15 +62,4 @@ public class ApiService {
                 .bodyToMono(AccessTokenDto.class) // Deserialization using AccessTokenDto
                 .block();
     }
-
-    public String getSubmissionsExample(AccessTokenDto accessTokenDto) {
-        String url = apiConfig.getEndpointSubmissionsExample();
-
-        return webClient.get()
-                .uri(url)
-                .header(HttpHeaders.AUTHORIZATION, "Bearer " + accessTokenDto.getAccessToken())
-                .retrieve()
-                .bodyToMono(String.class)
-                .block();
-    }
 }

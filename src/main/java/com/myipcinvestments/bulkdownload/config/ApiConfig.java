@@ -10,7 +10,6 @@ public class ApiConfig {
     private String username;
     private String password;
     private String endpointToken; // api/1.0/oauth2/access_token
-    private String endpointSubmissionsExample; // fbu/uapi/modules/{{moduleId}}/submissions?sortBy=created&sortOrder=-1\
 
     // Getters and setters for the properties
 
@@ -44,14 +43,6 @@ public class ApiConfig {
 
     public void setEndpointToken(String endpointToken) {
         this.endpointToken = endpointToken;
-    }
-
-    public String getEndpointSubmissionsExample() {
-        return url + endpointSubmissionsExample;
-    }
-
-    public void setEndpointSubmissionsExample(String endpointSubmissionsExample) {
-        this.endpointSubmissionsExample = endpointSubmissionsExample;
     }
 
     public ApiConfig apiConfig() {
