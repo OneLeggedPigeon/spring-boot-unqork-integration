@@ -25,10 +25,4 @@ public class ApiController {
         System.out.println("AccessTokenDto: " + apiService.getAccessToken());
     }
 
-    @GetMapping("/submissions-example")
-    @ResponseBody
-    public String submissionsExample(){
-        return apiService.getSubmissionsExample(apiService.getAccessToken());
-    }
-
 }
