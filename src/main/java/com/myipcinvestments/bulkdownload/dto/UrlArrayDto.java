@@ -21,7 +21,7 @@ public class UrlArrayDto {
     // limit file array to a set number of entries
     public void limit() {
         int newUrlLength = Math.min(urlArray.length, LIMIT);
-        setUrlArray(Arrays.copyOfRange(urlArray, 0, newUrlLength));
         if (urlArray.length > LIMIT) System.out.println("Array limited to " + newUrlLength);
+        setUrlArray(Arrays.copyOfRange(urlArray, 0, newUrlLength));
     }
 }
