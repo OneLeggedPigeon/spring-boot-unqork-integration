@@ -33,6 +33,9 @@ public class FileController {
              BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(byteArrayOutputStream);
              ZipOutputStream zipOutputStream = new ZipOutputStream(bufferedOutputStream)) {
 
+            //TODO: Uncap file array
+            urlArray.limit();
+
             fileService.downloadAndZipFiles(urlArray.getUrlArray(), zipOutputStream, apiService.getAccessToken());
 
             // Set response headers
