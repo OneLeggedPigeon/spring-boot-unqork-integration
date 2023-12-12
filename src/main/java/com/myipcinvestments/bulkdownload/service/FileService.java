@@ -43,7 +43,7 @@ public class FileService {
                     // Parse the filename from the Content-Disposition header
                     String filename = extractFilenameFromContentDisposition(contentDispositionHeader.get(0));
                     // Log or use the filename as needed
-                    System.out.println("Filename: " + filename);
+                    System.out.println("Adding File: " + filename);
                 }
 
                 // Return the byte array
